@@ -1,3 +1,5 @@
+import DownloadButton from "./DownloadButton";
+
 export default function Hero() {
   return (
     <section className="relative">
@@ -31,13 +33,9 @@ export default function Hero() {
         </p>
 
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
-          <a
-            href="/True-Digital-Hustle-AI-Creator-Starter-Kit.pdf"
-            download
-            className="w-full rounded-full bg-foreground px-8 py-3.5 text-sm font-semibold text-background transition-all hover:-translate-y-0.5 hover:shadow-[0_0_40px_-10px_rgba(255,255,255,0.5)] sm:w-auto"
-          >
+          <DownloadButton className="w-full rounded-full bg-foreground px-8 py-3.5 text-sm font-semibold text-background transition-all hover:-translate-y-0.5 hover:shadow-[0_0_40px_-10px_rgba(255,255,255,0.5)] sm:w-auto">
             Download Free Starter Kit
-          </a>
+          </DownloadButton>
           <a
             href="#whats-included"
             className="w-full rounded-full border border-border px-8 py-3.5 text-sm font-semibold text-foreground transition-colors hover:border-accent/60 hover:bg-white/5 sm:w-auto"

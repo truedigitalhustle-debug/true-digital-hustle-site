@@ -14,9 +14,9 @@ export default function Home() {
                 <Header />
                 <main className="flex-1">
                         <Hero />
+                        <MagicaBonus />
                         <SocialProof />
                         <WhatYoullGet />
-                        <MagicaBonus />
                         <WhyItWorks />
                         <FAQ />
                         <FinalCTA />

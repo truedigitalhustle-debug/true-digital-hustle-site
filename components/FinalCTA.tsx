@@ -1,3 +1,5 @@
+import DownloadButton from "./DownloadButton";
+
 export default function FinalCTA() {
   return (
     <section className="relative overflow-hidden py-24">
@@ -14,13 +16,9 @@ export default function FinalCTA() {
           click to download.
         </p>
         <div className="mt-8">
-          <a
-            href="/True-Digital-Hustle-AI-Creator-Starter-Kit.pdf"
-            download
-            className="inline-block rounded-full bg-foreground px-8 py-3.5 text-sm font-semibold text-background transition-all hover:-translate-y-0.5 hover:shadow-[0_0_40px_-10px_rgba(255,255,255,0.5)]"
-          >
+          <DownloadButton className="inline-block rounded-full bg-foreground px-8 py-3.5 text-sm font-semibold text-background transition-all hover:-translate-y-0.5 hover:shadow-[0_0_40px_-10px_rgba(255,255,255,0.5)]">
             Download Free Starter Kit
-          </a>
+          </DownloadButton>
         </div>
       </div>
     </section>

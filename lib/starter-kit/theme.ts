@@ -288,7 +288,29 @@ export const styles = StyleSheet.create({
           padding: 12,
           marginBottom: 10,
     },
-    toolBadge: {
+toolCardFeatured: {
+            borderColor: COLORS.accent,
+            borderWidth: 1.5,
+            backgroundColor: COLORS.cardAlt,
+},
+        toolFeaturedTag: {
+                    alignSelf: "flex-start",
+                    backgroundColor: COLORS.accent,
+                    borderRadius: 20,
+                    paddingHorizontal: 8,
+                    paddingVertical: 3,
+                    marginBottom: 8,
+        },
+        toolFeaturedTagText: {
+                    fontSize: 7.5,
+                    fontFamily: "Helvetica-Bold",
+                    color: COLORS.white,
+                    letterSpacing: 0.5,
+        },
+        toolBadgeFeatured: {
+                    backgroundColor: COLORS.accent,
+        },
+        toolBadge: {
           width: 22,
           height: 22,
           borderRadius: 6,

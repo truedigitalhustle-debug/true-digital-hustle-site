@@ -177,9 +177,17 @@ export function ToolsPage() {
       <Text style={styles.h1}>{TOOLS.title}</Text>
       {TOOLS.items.map(function (tool, index) {
         return (
-          <View style={styles.toolCard} key={index}>
+          <View
+            style={tool.featured ? [styles.toolCard, styles.toolCardFeatured] : styles.toolCard}
+            key={index}
+          >
+            {tool.featured ? (
+              <View style={styles.toolFeaturedTag}>
+                <Text style={styles.toolFeaturedTagText}>{tool.badge || "FEATURED"}</Text>
+              </View>
+            ) : null}
             <View style={styles.cardRow}>
-              <View style={styles.toolBadge}>
+              <View style={tool.featured ? [styles.toolBadge, styles.toolBadgeFeatured] : styles.toolBadge}>
                 <Text style={styles.toolBadgeText}>{tool.name.charAt(0)}</Text>
               </View>
               <View style={styles.cardContent}>
@@ -190,6 +198,12 @@ export function ToolsPage() {
                 <Text style={styles.toolMetaText}>{tool.why}</Text>
                 <Text style={styles.toolMetaLabel}>BEST FOR</Text>
                 <Text style={styles.toolMetaText}>{tool.best}</Text>
+                {tool.bonus ? (
+                  <View>
+                    <Text style={styles.toolMetaLabel}>BONUS</Text>
+                    <Text style={styles.toolMetaText}>{tool.bonus}</Text>
+                  </View>
+                ) : null}
               </View>
             </View>
           </View>
